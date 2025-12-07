@@ -43,6 +43,14 @@
         .card-section {
             margin-top: 120px;
         }
+
+        /* Equal spacing for cards */
+        .card-row {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     </style>
 
 </head>
@@ -133,38 +141,32 @@
 
     <!-- Cards -->
     <div class="container my-5 card-section">
-        <div class="row g-5 justify-content-center">
+        <div class="card-row">
 
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="8th Standard.png" class="card-img-top" alt="8th">
-                    <div class="card-body">
-                        <h5 class="card-title">Standard 8</h5>
-                        <p class="card-text">Some question papers and answers. Click below ||</p>
-                        <a href="#" class="btn btn-primary">Go learn</a>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="8th Standard.png" class="card-img-top" alt="8th">
+                <div class="card-body">
+                    <h5 class="card-title">Standard 8</h5>
+                    <p class="card-text">Some question papers and answers. Click below ||</p>
+                    <a href="#" class="btn btn-primary">Go learn</a>
                 </div>
             </div>
 
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem%;">
-                    <img src="9th Standard.png" class="card-img-top" alt="9th">
-                    <div class="card-body">
-                        <h5 class="card-title">Standard 9</h5>
-                        <p class="card-text">Some question papers and answers. Click below ||</p>
-                        <a href="#" class="btn btn-primary">Go learn</a>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="9th Standard.png" class="card-img-top" alt="9th">
+                <div class="card-body">
+                    <h5 class="card-title">Standard 9</h5>
+                    <p class="card-text">Some question papers and answers. Click below ||</p>
+                    <a href="#" class="btn btn-primary">Go learn</a>
                 </div>
             </div>
 
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="10th Standard.jpg" class="card-img-top" alt="10th">
-                    <div class="card-body">
-                        <h5 class="card-title">Standard 10</h5>
-                        <p class="card-text">Some question papers and answers. Click below ||</p>
-                        <a href="#" class="btn btn-primary">Go learn</a>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="10th Standard.jpg" class="card-img-top" alt="10th">
+                <div class="card-body">
+                    <h5 class="card-title">Standard 10</h5>
+                    <p class="card-text">Some question papers and answers. Click below ||</p>
+                    <a href="#" class="btn btn-primary">Go learn</a>
                 </div>
             </div>
 
