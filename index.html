@@ -40,16 +40,22 @@
             gap: 8px;
         }
 
-        .card-section {
-            margin-top: 120px;
+        /* Slideshow image fix */
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
         }
 
-        /* Equal spacing for cards */
-        .card-row {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 30px;
+        @media (min-width: 992px) {
+            .carousel-item img {
+                height: 500px; /* Desktop height */
+            }
+        }
+
+        .card-section {
+            margin-top: 60px;
         }
     </style>
 
@@ -102,7 +108,7 @@
 
 
     <!-- Slideshow -->
-    <div style="margin-top: 40px; display: flex; justify-content: center;">
+    <div style="margin-top:40px; display:flex; justify-content:center;">
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
@@ -113,18 +119,23 @@
             </div>
 
             <div class="carousel-inner">
+
                 <div class="carousel-item active">
                     <img src="vlearns.jpg" class="d-block w-100" alt="Slide 1">
                 </div>
+
                 <div class="carousel-item">
                     <img src="8th.jpg" class="d-block w-100" alt="Slide 2">
                 </div>
+
                 <div class="carousel-item">
                     <img src="9th.jpg" class="d-block w-100" alt="Slide 3">
                 </div>
+
                 <div class="carousel-item">
                     <img src="10th.jpg" class="d-block w-100" alt="Slide 4">
                 </div>
+
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -141,32 +152,38 @@
 
     <!-- Cards -->
     <div class="container my-5 card-section">
-        <div class="card-row">
+        <div class="row g-5 justify-content-center">
 
-            <div class="card" style="width: 18rem;">
-                <img src="8th Standard.png" class="card-img-top" alt="8th">
-                <div class="card-body">
-                    <h5 class="card-title">Standard 8</h5>
-                    <p class="card-text">Some question papers and answers. Click below ||</p>
-                    <a href="#" class="btn btn-primary">Go learn</a>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="8th Standard.png" class="card-img-top" alt="8th">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard 8</h5>
+                        <p class="card-text">Some question papers and answers. Click below ||</p>
+                        <a href="#" class="btn btn-primary">Go learn</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="9th Standard.png" class="card-img-top" alt="9th">
-                <div class="card-body">
-                    <h5 class="card-title">Standard 9</h5>
-                    <p class="card-text">Some question papers and answers. Click below ||</p>
-                    <a href="#" class="btn btn-primary">Go learn</a>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="9th Standard.png" class="card-img-top" alt="9th">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard 9</h5>
+                        <p class="card-text">Some question papers and answers. Click below ||</p>
+                        <a href="#" class="btn btn-primary">Go learn</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="10th Standard.jpg" class="card-img-top" alt="10th">
-                <div class="card-body">
-                    <h5 class="card-title">Standard 10</h5>
-                    <p class="card-text">Some question papers and answers. Click below ||</p>
-                    <a href="#" class="btn btn-primary">Go learn</a>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="10th Standard.jpg" class="card-img-top" alt="10th">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard 10</h5>
+                        <p class="card-text">Some question papers and answers. Click below ||</p>
+                        <a href="#" class="btn btn-primary">Go learn</a>
+                    </div>
                 </div>
             </div>
 
